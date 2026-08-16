@@ -1,12 +1,12 @@
-# Semester Zero - [Your Name]
+# Semester Zero - [FAZAL A]
 
 ## About Me
-- **Name:** [Your Full Name]
-- **Register Number:** [Your Register Number]
-- **Department:** [Your Department]
-- **College Name:** [Your College Name]
-- **Career Goal:** [e.g. Software Engineer / Data Scientist / etc.]
-- **Fun Fact:** [One interesting fact about yourself]
+- **Name:** [FAZAL A]
+- **Register Number:** [RTC2026BBT046]
+- **Department:** [BTECH-BIOTECHNOLOGY]
+- **College Name:** [RATHINAM TECHNICAL CAMPUS]
+- **Career Goal:** [STUDENT]
+- **Fun Fact:** [PLAYING CRICKET]
 
 ## About This Repository
 This repository organizes my Semester Zero learning journey, including work in Scratch, C programming, and HTML/CSS.

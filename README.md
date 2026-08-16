@@ -1,4 +1,4 @@
-# Semester Zero - [FAZAL A]
+# Semester Zero - FAZAL A
 
 ## About Me
 - **Name:** FAZAL A

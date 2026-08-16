@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Portfolio</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; scroll-behavior: smooth; }
+
+  /* Navbar */
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f1f2e;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+  }
+  #navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 25px;
+    font-weight: 600;
+  }
+  .nav-link:hover { background: #33334d; }
+
+  /* Welcome section */
+  #welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  #welcome-section h1 { font-size: 3rem; margin-bottom: 10px; }
+  #welcome-section p { font-size: 1.3rem; color: #d0d8ff; }
+
+  /* Projects */
+  #projects {
+    background: #f4f4f8;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  #projects > h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #1f1f2e;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .project-tile {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+    transition: transform 0.2s ease;
+  }
+  .project-tile:hover { transform: translateY(-5px); }
+  .project-tile img { width: 100%; height: 160px; object-fit: cover; }
+  .project-tile .project-info { padding: 15px; }
+  #project-title { margin-bottom: 6px; font-size: 1.1rem; color: #1f1f2e; }
+  .project-tile p { color: #555; font-size: 0.95rem; }
+
+  /* Footer / profile link */
+  footer {
+    background: #1f1f2e;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  #profile-link {
+    color: #8ab4ff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  #profile-link:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    #navbar { justify-content: center; }
+    #welcome-section h1 { font-size: 2.2rem; }
+  }
+</style>
+</head>
+<body>
+
+  <nav id="navbar">
+    <ul>
+      <li><a class="nav-link" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link" href="#projects">Projects</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="welcome-section">
+    <h1>Hi, I'm Your Name</h1>
+    <p>I'm a web developer who builds clean, functional websites.</p>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+
+      <div class="project-tile">
+        <a href="#" target="_blank">
+          <img src="https://via.placeholder.com/400x200?text=Project+One" alt="Project One">
+          <div class="project-info">
+            <h3 id="project-title">Project One</h3>
+            <p>A short description of what this project does and what tech was used.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="#" target="_blank">
+          <img src="https://via.placeholder.com/400x200?text=Project+Two" alt="Project Two">
+          <div class="project-info">
+            <h3 id="project-title">Project Two</h3>
+            <p>A short description of what this project does and what tech was used.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="project-tile">
+        <a href="#" target="_blank">
+          <img src="https://via.placeholder.com/400x200?text=Project+Three" alt="Project Three">
+          <div class="project-info">
+            <h3 id="project-title">Project Three</h3>
+            <p>A short description of what this project does and what tech was used.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>Find me on
+      <a id="profile-link" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
+      and
+      <a id="profile-link" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+
+</body>
+</html>

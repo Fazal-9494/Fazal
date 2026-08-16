@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Product Landing Page</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; color: #222; }
+  header#header {
+    position: fixed;
+    top: 0; width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px 30px;
+    z-index: 10;
+  }
+  #header-img { height: 40px; }
+  #nav-bar { display: flex; gap: 25px; list-style: none; }
+  .nav-link { text-decoration: none; color: #222; font-weight: 600; }
+  .nav-link:hover { color: #2563eb; }
+
+  #hero {
+    margin-top: 70px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  #hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+  #hero p { font-size: 1.2rem; margin-bottom: 25px; color: #dbeafe; }
+
+  #features { padding: 60px 20px; text-align: center; }
+  #features h2 { margin-bottom: 40px; }
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .feature-item { background: #f3f4f6; padding: 25px; border-radius: 8px; }
+
+  #video-section { background: #111827; color: #fff; text-align: center; padding: 60px 20px; }
+  #video-section h2 { margin-bottom: 25px; }
+  #video { width: 100%; max-width: 560px; height: 315px; border: none; }
+
+  #form-section { padding: 60px 20px; text-align: center; }
+  #form { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+  #email { padding: 12px; width: 260px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+  #submit {
+    padding: 12px 25px;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  #submit:hover { background: #1d4ed8; }
+</style>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/fcc_secondary.svg" alt="Company Logo">
+    <nav>
+      <ul id="nav-bar">
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#video-section">How It Works</a></li>
+        <li><a class="nav-link" href="#form-section">Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Plan Smarter. Ship Faster.</h1>
+    <p>The all-in-one tool for teams who want to move quickly without breaking things.</p>
+    <a href="#form-section" id="cta-button" style="background:#fff;color:#1e3a8a;padding:12px 28px;border-radius:5px;text-decoration:none;font-weight:700;">Get Started — It's Free</a>
+  </section>
+
+  <section id="features">
+    <h2>Why Teams Choose Us</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <h3>Fast Setup</h3>
+        <p>Get your team up and running in under five minutes, no credit card required.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Real-Time Sync</h3>
+        <p>Every change syncs instantly across your whole team, on every device.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Secure by Default</h3>
+        <p>End-to-end encryption keeps your data safe without any extra setup.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="video-section">
+    <h2>See It In Action</h2>
+    <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Product demo video" allowfullscreen></iframe>
+  </section>
+
+  <section id="form-section">
+    <h2>Ready to get started?</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <input type="submit" id="submit" value="Get Started">
+    </form>
+  </section>
+</body>
+</html>

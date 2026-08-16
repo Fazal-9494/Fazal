@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Technical Documentation</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; }
+  #navbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 250px;
+    height: 100%;
+    background: #1f2937;
+    color: #fff;
+    overflow-y: auto;
+    padding: 20px 0;
+  }
+  #navbar h1 { font-size: 1.2rem; padding: 0 20px 15px; border-bottom: 1px solid #374151; }
+  .nav-link {
+    display: block;
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  .nav-link:hover { background: #374151; color: #fff; }
+  #main-doc { margin-left: 270px; padding: 30px; max-width: 700px; }
+  .main-section { margin-bottom: 40px; }
+  .main-section header {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #2563eb;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  code {
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    white-space: pre-wrap;
+  }
+  @media (max-width: 700px) {
+    #navbar { position: relative; width: 100%; height: auto; }
+    #main-doc { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+  <nav id="navbar">
+    <header><h1>C Documentation</h1></header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Conditionals">Conditionals</a>
+    <a class="nav-link" href="#Loops">Loops</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>C is a general-purpose, procedural programming language that gives programmers low-level access to memory and system resources.</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data that can be used and manipulated throughout a program. Every variable in C has a type.</p>
+      <code>int age = 25;
+float price = 9.99;
+char grade = 'A';</code>
+    </section>
+
+    <section class="main-section" id="Conditionals">
+      <header>Conditionals</header>
+      <p>Conditionals let a program make decisions using if, else if, and else statements.</p>
+      <code>if (n > 0) {
+    printf("Positive\n");
+} else {
+    printf("Not positive\n");
+}</code>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops let a program repeat a block of code, using for, while, or do-while statements.</p>
+      <code>for (int i = 1; i <= n; i++) {
+    printf("%d ", i);
+}</code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions group reusable blocks of code that can accept parameters and return values.</p>
+      <code>int add(int a, int b) {
+    return a + b;
+}</code>
+    </section>
+  </main>
+</body>
+</html>
